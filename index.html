@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor Goob</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Traductor Goob</h1>
+        <label for="inputText">Texto de entrada:</label>
+        <textarea id="inputText" rows="4" cols="50"></textarea>
+        
+        <div class="radio-buttons">
+            <input type="radio" id="toGoob" name="conversion" value="A Goob" checked>
+            <label for="toGoob">A Goob</label>
+            <input type="radio" id="toText" name="conversion" value="A texto">
+            <label for="toText">A texto</label>
+        </div>
+        
+        <button onclick="convert()">Convertir</button>
+        
+        <label for="resultText">Resultado:</label>
+        <textarea id="resultText" rows="4" cols="50" readonly></textarea>
+        
+        <button onclick="copyToClipboard()">Copiar texto</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
